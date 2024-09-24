@@ -3,6 +3,7 @@ name: Check for new Mattermost Releases
 on:
   schedule:
     - cron: '0 0 * * *'  # Vérifie toutes les jours à minuit
+  workflow_dispatch:
 
 jobs:
   check-releases:
