@@ -50,7 +50,7 @@ jobs:
         # setup a separate job which does clone + tag, but felt like this was "good enough" for now.
         continue-on-error: true
         with:
-          github-token: ${{ secrets.GH_TOKEN }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             github.rest.git.createRef({
               owner: context.repo.owner,
